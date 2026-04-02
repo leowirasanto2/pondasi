@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'git@github.com:leowirasanto2/pondasi.git', :tag => "journal-v#{s.version}" }
 
   # Crucial: Point to the internal folder for this specific pod
-  s.source_files     = 'Sources/**/*'
+  s.source_files     = 'JournalApp/**/*.swift'
   s.dependency 'PondasiContracts'
   s.ios.deployment_target = '17.0'
 end

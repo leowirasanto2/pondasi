@@ -43,16 +43,22 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		60B426BA2F7EB77300836247 /* PondasiApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiApp;
 			sourceTree = "<group>";
 		};
 		60B426CA2F7EB77600836247 /* PondasiAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiAppTests;
 			sourceTree = "<group>";
 		};
 		60B426D42F7EB77600836247 /* PondasiAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiAppUITests;
 			sourceTree = "<group>";
 		};
@@ -138,6 +144,7 @@
 				60B426B42F7EB77300836247 /* Sources */,
 				60B426B52F7EB77300836247 /* Frameworks */,
 				60B426B62F7EB77300836247 /* Resources */,
+				2E89283185729B379C76F16F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +270,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E89283185729B379C76F16F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PondasiApp/Pods-PondasiApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PondasiApp/Pods-PondasiApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PondasiApp/Pods-PondasiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7F4C1C2AE6380986C7D3BE7A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

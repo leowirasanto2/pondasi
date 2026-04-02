@@ -24,10 +24,10 @@ EXTERNAL SOURCES:
     :path: "../Apps/WorkoutApp"
 
 SPEC CHECKSUMS:
-  CreativityApp: e5f53158e7b04614080c36bb5ecd66f302839933
-  JournalApp: 394141c3a321bce269de820530501fa82c0b6ef6
-  PondasiContracts: 507897422ecc206e1e8d468a37d9acc72a8f676d
-  WorkoutApp: 841fcc719b9acbd03e9e7e97f6468728288afd01
+  CreativityApp: e9c9a3531383fd2663329c219e6fd50d754dcf5b
+  JournalApp: 50c42dbfc4035bc5866bad5911aff9f66701b65c
+  PondasiContracts: e1ba3cb7fda32c79ad6842241f8502138a390a0a
+  WorkoutApp: f8e6bc1d66ec7ce9b9610d0e37c0782e03ec7555
 
 PODFILE CHECKSUM: d5185a12771dbddda7eb05d7558c6352fe2640fc
 

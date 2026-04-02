@@ -8,14 +8,27 @@
 import Foundation
 
 public struct Profile: Equatable {
-    let id: String
-    let firstName: String
-    let lastName: String
-    let profilePicture: ProfilePicture
+    public let id: String
+    public let firstName: String
+    public let lastName: String
+    public let profilePicture: ProfilePicture
+
+    public init(id: String, firstName: String, lastName: String, profilePicture: ProfilePicture) {
+        self.id = id
+        self.firstName = firstName
+        self.lastName = lastName
+        self.profilePicture = profilePicture
+    }
 }
 
 public struct ProfilePicture: Equatable {
-    let id: String
-    let fileName: String
-    let filePath: String
+    public let id: String
+    public let fileName: String
+    public let filePath: String
+
+    public init(id: String, fileName: String, filePath: String) {
+        self.id = id
+        self.fileName = fileName
+        self.filePath = filePath
+    }
 }

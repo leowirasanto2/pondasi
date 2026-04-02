@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0DA72E3C8B69C301811528AE /* Pods_PondasiContracts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA2294BA919CD97DC21E6C2 /* Pods_PondasiContracts.framework */; };
+		E2AA42843789AC5108643AA1 /* Pods_PondasiContracts_PondasiContractsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DEA0B5A3226AE3E9FBF3E3 /* Pods_PondasiContracts_PondasiContractsUITests.framework */; };
+		F5086753A1B461C34DB81CA7 /* Pods_PondasiContractsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68982BB492DAA69B49B1737B /* Pods_PondasiContractsTests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		60B427AA2F7EBE6800836247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,24 +30,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2493C4457FFE049A26E84F60 /* Pods-PondasiContractsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContractsTests.debug.xcconfig"; path = "Target Support Files/Pods-PondasiContractsTests/Pods-PondasiContractsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EA2294BA919CD97DC21E6C2 /* Pods_PondasiContracts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PondasiContracts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F28DCF84AF2E34FF3E7A8D7 /* Pods-PondasiContractsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContractsTests.release.xcconfig"; path = "Target Support Files/Pods-PondasiContractsTests/Pods-PondasiContractsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F0F37976DCE48C510F1218E /* Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig"; path = "Target Support Files/Pods-PondasiContracts-PondasiContractsUITests/Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		60B4279A2F7EBE6600836247 /* PondasiContracts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PondasiContracts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B427A92F7EBE6800836247 /* PondasiContractsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondasiContractsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B427B32F7EBE6800836247 /* PondasiContractsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondasiContractsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68982BB492DAA69B49B1737B /* Pods_PondasiContractsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PondasiContractsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DEA0B5A3226AE3E9FBF3E3 /* Pods_PondasiContracts_PondasiContractsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PondasiContracts_PondasiContractsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B78BF4AECF851F99B6B3E43 /* Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig"; path = "Target Support Files/Pods-PondasiContracts-PondasiContractsUITests/Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC0EE3D4A163361798252C69 /* Pods-PondasiContracts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts.debug.xcconfig"; path = "Target Support Files/Pods-PondasiContracts/Pods-PondasiContracts.debug.xcconfig"; sourceTree = "<group>"; };
+		D1398F50FDF55BCA6B096BD4 /* Pods-PondasiContracts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts.release.xcconfig"; path = "Target Support Files/Pods-PondasiContracts/Pods-PondasiContracts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		60B4279C2F7EBE6600836247 /* PondasiContracts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiContracts;
 			sourceTree = "<group>";
 		};
 		60B427AC2F7EBE6800836247 /* PondasiContractsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiContractsTests;
 			sourceTree = "<group>";
 		};
 		60B427B62F7EBE6800836247 /* PondasiContractsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiContractsUITests;
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA72E3C8B69C301811528AE /* Pods_PondasiContracts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5086753A1B461C34DB81CA7 /* Pods_PondasiContractsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +89,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2AA42843789AC5108643AA1 /* Pods_PondasiContracts_PondasiContractsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5894F4A9FCAFA3CF558B0A7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2294BA919CD97DC21E6C2 /* Pods_PondasiContracts.framework */,
+				73DEA0B5A3226AE3E9FBF3E3 /* Pods_PondasiContracts_PondasiContractsUITests.framework */,
+				68982BB492DAA69B49B1737B /* Pods_PondasiContractsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60B427912F7EBE6600836247 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +113,8 @@
 				60B427AC2F7EBE6800836247 /* PondasiContractsTests */,
 				60B427B62F7EBE6800836247 /* PondasiContractsUITests */,
 				60B4279B2F7EBE6600836247 /* Products */,
+				ACB1AE84380F4DFA62CA0F1B /* Pods */,
+				5894F4A9FCAFA3CF558B0A7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +128,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		ACB1AE84380F4DFA62CA0F1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC0EE3D4A163361798252C69 /* Pods-PondasiContracts.debug.xcconfig */,
+				D1398F50FDF55BCA6B096BD4 /* Pods-PondasiContracts.release.xcconfig */,
+				5F0F37976DCE48C510F1218E /* Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig */,
+				8B78BF4AECF851F99B6B3E43 /* Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig */,
+				2493C4457FFE049A26E84F60 /* Pods-PondasiContractsTests.debug.xcconfig */,
+				2F28DCF84AF2E34FF3E7A8D7 /* Pods-PondasiContractsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +149,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B427BD2F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContracts" */;
 			buildPhases = (
+				3458272E24A688D52E7D1546 /* [CP] Check Pods Manifest.lock */,
 				60B427962F7EBE6600836247 /* Sources */,
 				60B427972F7EBE6600836247 /* Frameworks */,
 				60B427982F7EBE6600836247 /* Resources */,
@@ -111,8 +162,6 @@
 				60B4279C2F7EBE6600836247 /* PondasiContracts */,
 			);
 			name = PondasiContracts;
-			packageProductDependencies = (
-			);
 			productName = PondasiContracts;
 			productReference = 60B4279A2F7EBE6600836247 /* PondasiContracts.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B427C02F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContractsTests" */;
 			buildPhases = (
+				4209536BCE1146E697C2AF5A /* [CP] Check Pods Manifest.lock */,
 				60B427A52F7EBE6800836247 /* Sources */,
 				60B427A62F7EBE6800836247 /* Frameworks */,
 				60B427A72F7EBE6800836247 /* Resources */,
@@ -134,8 +184,6 @@
 				60B427AC2F7EBE6800836247 /* PondasiContractsTests */,
 			);
 			name = PondasiContractsTests;
-			packageProductDependencies = (
-			);
 			productName = PondasiContractsTests;
 			productReference = 60B427A92F7EBE6800836247 /* PondasiContractsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B427C32F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContractsUITests" */;
 			buildPhases = (
+				299E32A489CA100261246A9D /* [CP] Check Pods Manifest.lock */,
 				60B427AF2F7EBE6800836247 /* Sources */,
 				60B427B02F7EBE6800836247 /* Frameworks */,
 				60B427B12F7EBE6800836247 /* Resources */,
@@ -157,8 +206,6 @@
 				60B427B62F7EBE6800836247 /* PondasiContractsUITests */,
 			);
 			name = PondasiContractsUITests;
-			packageProductDependencies = (
-			);
 			productName = PondasiContractsUITests;
 			productReference = 60B427B32F7EBE6800836247 /* PondasiContractsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +277,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299E32A489CA100261246A9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PondasiContracts-PondasiContractsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3458272E24A688D52E7D1546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PondasiContracts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4209536BCE1146E697C2AF5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PondasiContractsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60B427962F7EBE6600836247 /* Sources */ = {
@@ -392,6 +508,7 @@
 		};
 		60B427BE2F7EBE6800836247 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0EE3D4A163361798252C69 /* Pods-PondasiContracts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -424,6 +541,7 @@
 		};
 		60B427BF2F7EBE6800836247 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1398F50FDF55BCA6B096BD4 /* Pods-PondasiContracts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +574,7 @@
 		};
 		60B427C12F7EBE6800836247 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2493C4457FFE049A26E84F60 /* Pods-PondasiContractsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +597,7 @@
 		};
 		60B427C22F7EBE6800836247 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F28DCF84AF2E34FF3E7A8D7 /* Pods-PondasiContractsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +620,7 @@
 		};
 		60B427C42F7EBE6800836247 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F0F37976DCE48C510F1218E /* Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -520,6 +641,7 @@
 		};
 		60B427C52F7EBE6800836247 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B78BF4AECF851F99B6B3E43 /* Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

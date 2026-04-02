@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   # Updated to use your SSH URL
   s.source           = { :git => 'git@github.com:leowirasanto2/pondasi.git', :tag => "core-v#{s.version}" }
 
-  s.source_files     = 'Sources/**/*'
+  s.source_files     = 'PondasiContracts/**/*.swift'
   s.ios.deployment_target = '17.0'
   s.swift_version    = '6.0'
   s.frameworks       = 'Foundation', 'SwiftUI'
