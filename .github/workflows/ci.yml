@@ -1,0 +1,158 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  test-contracts:
+    name: PondasiContracts
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_26.0.app
+
+      - name: Pod install
+        working-directory: Core/PondasiContracts
+        run: pod install
+
+      - name: Run tests
+        working-directory: Core/PondasiContracts
+        run: |
+          xcodebuild test \
+            -workspace PondasiContracts.xcworkspace \
+            -scheme PondasiContracts \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -resultBundlePath TestResults/PondasiContracts.xcresult \
+            | xcpretty
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: PondasiContracts-results
+          path: Core/PondasiContracts/TestResults/
+
+  test-journal:
+    name: JournalApp
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_26.0.app
+
+      - name: Pod install
+        working-directory: Apps/JournalApp
+        run: pod install
+
+      - name: Run tests
+        working-directory: Apps/JournalApp
+        run: |
+          xcodebuild test \
+            -workspace JournalApp.xcworkspace \
+            -scheme JournalApp \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -resultBundlePath TestResults/JournalApp.xcresult \
+            | xcpretty
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: JournalApp-results
+          path: Apps/JournalApp/TestResults/
+
+  test-workout:
+    name: WorkoutApp
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_26.0.app
+
+      - name: Pod install
+        working-directory: Apps/WorkoutApp
+        run: pod install
+
+      - name: Run tests
+        working-directory: Apps/WorkoutApp
+        run: |
+          xcodebuild test \
+            -workspace WorkoutApp.xcworkspace \
+            -scheme WorkoutApp \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -resultBundlePath TestResults/WorkoutApp.xcresult \
+            | xcpretty
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WorkoutApp-results
+          path: Apps/WorkoutApp/TestResults/
+
+  test-creativity:
+    name: CreativityApp
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_26.0.app
+
+      - name: Pod install
+        working-directory: Apps/CreativityApp
+        run: pod install
+
+      - name: Run tests
+        working-directory: Apps/CreativityApp
+        run: |
+          xcodebuild test \
+            -workspace CreativityApp.xcworkspace \
+            -scheme CreativityApp \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -resultBundlePath TestResults/CreativityApp.xcresult \
+            | xcpretty
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CreativityApp-results
+          path: Apps/CreativityApp/TestResults/
+
+  test-pondasi-app:
+    name: PondasiApp
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_26.0.app
+
+      - name: Pod install
+        working-directory: PondasiApp
+        run: pod install
+
+      - name: Run tests
+        working-directory: PondasiApp
+        run: |
+          xcodebuild test \
+            -workspace PondasiApp.xcworkspace \
+            -scheme PondasiApp \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -resultBundlePath TestResults/PondasiApp.xcresult \
+            | xcpretty
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: PondasiApp-results
+          path: PondasiApp/TestResults/
