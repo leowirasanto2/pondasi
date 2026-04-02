@@ -1,0 +1,34 @@
+PODS:
+  - CreativityApp (1.0.0):
+    - PondasiContracts
+  - JournalApp (1.0.0):
+    - PondasiContracts
+  - PondasiContracts (1.0.0)
+  - WorkoutApp (1.0.0):
+    - PondasiContracts
+
+DEPENDENCIES:
+  - CreativityApp (from `../Apps/CreativityApp`)
+  - JournalApp (from `../Apps/JournalApp`)
+  - PondasiContracts (from `../Core/PondasiContracts`)
+  - WorkoutApp (from `../Apps/WorkoutApp`)
+
+EXTERNAL SOURCES:
+  CreativityApp:
+    :path: "../Apps/CreativityApp"
+  JournalApp:
+    :path: "../Apps/JournalApp"
+  PondasiContracts:
+    :path: "../Core/PondasiContracts"
+  WorkoutApp:
+    :path: "../Apps/WorkoutApp"
+
+SPEC CHECKSUMS:
+  CreativityApp: e9c9a3531383fd2663329c219e6fd50d754dcf5b
+  JournalApp: 50c42dbfc4035bc5866bad5911aff9f66701b65c
+  PondasiContracts: e1ba3cb7fda32c79ad6842241f8502138a390a0a
+  WorkoutApp: f8e6bc1d66ec7ce9b9610d0e37c0782e03ec7555
+
+PODFILE CHECKSUM: 450b21e1b089b76cef1dde903445e4c3623051f7
+
+COCOAPODS: 1.16.2

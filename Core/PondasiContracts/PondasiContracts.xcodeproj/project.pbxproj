@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DA72E3C8B69C301811528AE /* Pods_PondasiContracts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA2294BA919CD97DC21E6C2 /* Pods_PondasiContracts.framework */; };
+		E2AA42843789AC5108643AA1 /* Pods_PondasiContracts_PondasiContractsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DEA0B5A3226AE3E9FBF3E3 /* Pods_PondasiContracts_PondasiContractsUITests.framework */; };
+		F5086753A1B461C34DB81CA7 /* Pods_PondasiContractsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68982BB492DAA69B49B1737B /* Pods_PondasiContractsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60B427AA2F7EBE6800836247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60B427922F7EBE6600836247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60B427992F7EBE6600836247;
+			remoteInfo = PondasiContracts;
+		};
+		60B427B42F7EBE6800836247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60B427922F7EBE6600836247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60B427992F7EBE6600836247;
+			remoteInfo = PondasiContracts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2493C4457FFE049A26E84F60 /* Pods-PondasiContractsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContractsTests.debug.xcconfig"; path = "Target Support Files/Pods-PondasiContractsTests/Pods-PondasiContractsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EA2294BA919CD97DC21E6C2 /* Pods_PondasiContracts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PondasiContracts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F28DCF84AF2E34FF3E7A8D7 /* Pods-PondasiContractsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContractsTests.release.xcconfig"; path = "Target Support Files/Pods-PondasiContractsTests/Pods-PondasiContractsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F0F37976DCE48C510F1218E /* Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig"; path = "Target Support Files/Pods-PondasiContracts-PondasiContractsUITests/Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60B4279A2F7EBE6600836247 /* PondasiContracts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PondasiContracts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B427A92F7EBE6800836247 /* PondasiContractsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondasiContractsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B427B32F7EBE6800836247 /* PondasiContractsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondasiContractsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68982BB492DAA69B49B1737B /* Pods_PondasiContractsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PondasiContractsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DEA0B5A3226AE3E9FBF3E3 /* Pods_PondasiContracts_PondasiContractsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PondasiContracts_PondasiContractsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B78BF4AECF851F99B6B3E43 /* Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig"; path = "Target Support Files/Pods-PondasiContracts-PondasiContractsUITests/Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC0EE3D4A163361798252C69 /* Pods-PondasiContracts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts.debug.xcconfig"; path = "Target Support Files/Pods-PondasiContracts/Pods-PondasiContracts.debug.xcconfig"; sourceTree = "<group>"; };
+		D1398F50FDF55BCA6B096BD4 /* Pods-PondasiContracts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PondasiContracts.release.xcconfig"; path = "Target Support Files/Pods-PondasiContracts/Pods-PondasiContracts.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		60B4279C2F7EBE6600836247 /* PondasiContracts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PondasiContracts;
+			sourceTree = "<group>";
+		};
+		60B427AC2F7EBE6800836247 /* PondasiContractsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PondasiContractsTests;
+			sourceTree = "<group>";
+		};
+		60B427B62F7EBE6800836247 /* PondasiContractsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PondasiContractsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60B427972F7EBE6600836247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA72E3C8B69C301811528AE /* Pods_PondasiContracts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B427A62F7EBE6800836247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5086753A1B461C34DB81CA7 /* Pods_PondasiContractsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B427B02F7EBE6800836247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AA42843789AC5108643AA1 /* Pods_PondasiContracts_PondasiContractsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5894F4A9FCAFA3CF558B0A7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2294BA919CD97DC21E6C2 /* Pods_PondasiContracts.framework */,
+				73DEA0B5A3226AE3E9FBF3E3 /* Pods_PondasiContracts_PondasiContractsUITests.framework */,
+				68982BB492DAA69B49B1737B /* Pods_PondasiContractsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60B427912F7EBE6600836247 = {
+			isa = PBXGroup;
+			children = (
+				60B4279C2F7EBE6600836247 /* PondasiContracts */,
+				60B427AC2F7EBE6800836247 /* PondasiContractsTests */,
+				60B427B62F7EBE6800836247 /* PondasiContractsUITests */,
+				60B4279B2F7EBE6600836247 /* Products */,
+				ACB1AE84380F4DFA62CA0F1B /* Pods */,
+				5894F4A9FCAFA3CF558B0A7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60B4279B2F7EBE6600836247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60B4279A2F7EBE6600836247 /* PondasiContracts.app */,
+				60B427A92F7EBE6800836247 /* PondasiContractsTests.xctest */,
+				60B427B32F7EBE6800836247 /* PondasiContractsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACB1AE84380F4DFA62CA0F1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC0EE3D4A163361798252C69 /* Pods-PondasiContracts.debug.xcconfig */,
+				D1398F50FDF55BCA6B096BD4 /* Pods-PondasiContracts.release.xcconfig */,
+				5F0F37976DCE48C510F1218E /* Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig */,
+				8B78BF4AECF851F99B6B3E43 /* Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig */,
+				2493C4457FFE049A26E84F60 /* Pods-PondasiContractsTests.debug.xcconfig */,
+				2F28DCF84AF2E34FF3E7A8D7 /* Pods-PondasiContractsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60B427992F7EBE6600836247 /* PondasiContracts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B427BD2F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContracts" */;
+			buildPhases = (
+				3458272E24A688D52E7D1546 /* [CP] Check Pods Manifest.lock */,
+				60B427962F7EBE6600836247 /* Sources */,
+				60B427972F7EBE6600836247 /* Frameworks */,
+				60B427982F7EBE6600836247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				60B4279C2F7EBE6600836247 /* PondasiContracts */,
+			);
+			name = PondasiContracts;
+			productName = PondasiContracts;
+			productReference = 60B4279A2F7EBE6600836247 /* PondasiContracts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60B427A82F7EBE6800836247 /* PondasiContractsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B427C02F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContractsTests" */;
+			buildPhases = (
+				4209536BCE1146E697C2AF5A /* [CP] Check Pods Manifest.lock */,
+				60B427A52F7EBE6800836247 /* Sources */,
+				60B427A62F7EBE6800836247 /* Frameworks */,
+				60B427A72F7EBE6800836247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B427AB2F7EBE6800836247 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				60B427AC2F7EBE6800836247 /* PondasiContractsTests */,
+			);
+			name = PondasiContractsTests;
+			productName = PondasiContractsTests;
+			productReference = 60B427A92F7EBE6800836247 /* PondasiContractsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60B427B22F7EBE6800836247 /* PondasiContractsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B427C32F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContractsUITests" */;
+			buildPhases = (
+				299E32A489CA100261246A9D /* [CP] Check Pods Manifest.lock */,
+				60B427AF2F7EBE6800836247 /* Sources */,
+				60B427B02F7EBE6800836247 /* Frameworks */,
+				60B427B12F7EBE6800836247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B427B52F7EBE6800836247 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				60B427B62F7EBE6800836247 /* PondasiContractsUITests */,
+			);
+			name = PondasiContractsUITests;
+			productName = PondasiContractsUITests;
+			productReference = 60B427B32F7EBE6800836247 /* PondasiContractsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60B427922F7EBE6600836247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					60B427992F7EBE6600836247 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					60B427A82F7EBE6800836247 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 60B427992F7EBE6600836247;
+					};
+					60B427B22F7EBE6800836247 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 60B427992F7EBE6600836247;
+					};
+				};
+			};
+			buildConfigurationList = 60B427952F7EBE6600836247 /* Build configuration list for PBXProject "PondasiContracts" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60B427912F7EBE6600836247;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 60B4279B2F7EBE6600836247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60B427992F7EBE6600836247 /* PondasiContracts */,
+				60B427A82F7EBE6800836247 /* PondasiContractsTests */,
+				60B427B22F7EBE6800836247 /* PondasiContractsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60B427982F7EBE6600836247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B427A72F7EBE6800836247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B427B12F7EBE6800836247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299E32A489CA100261246A9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PondasiContracts-PondasiContractsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3458272E24A688D52E7D1546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PondasiContracts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4209536BCE1146E697C2AF5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PondasiContractsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60B427962F7EBE6600836247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B427A52F7EBE6800836247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B427AF2F7EBE6800836247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60B427AB2F7EBE6800836247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60B427992F7EBE6600836247 /* PondasiContracts */;
+			targetProxy = 60B427AA2F7EBE6800836247 /* PBXContainerItemProxy */;
+		};
+		60B427B52F7EBE6800836247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60B427992F7EBE6600836247 /* PondasiContracts */;
+			targetProxy = 60B427B42F7EBE6800836247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		60B427BB2F7EBE6800836247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60B427BC2F7EBE6800836247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60B427BE2F7EBE6800836247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0EE3D4A163361798252C69 /* Pods-PondasiContracts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leowirasanto.PondasiContracts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60B427BF2F7EBE6800836247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1398F50FDF55BCA6B096BD4 /* Pods-PondasiContracts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leowirasanto.PondasiContracts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60B427C12F7EBE6800836247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2493C4457FFE049A26E84F60 /* Pods-PondasiContractsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leowirasanto.PondasiContractsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondasiContracts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PondasiContracts";
+			};
+			name = Debug;
+		};
+		60B427C22F7EBE6800836247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F28DCF84AF2E34FF3E7A8D7 /* Pods-PondasiContractsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leowirasanto.PondasiContractsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondasiContracts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PondasiContracts";
+			};
+			name = Release;
+		};
+		60B427C42F7EBE6800836247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F0F37976DCE48C510F1218E /* Pods-PondasiContracts-PondasiContractsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leowirasanto.PondasiContractsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PondasiContracts;
+			};
+			name = Debug;
+		};
+		60B427C52F7EBE6800836247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B78BF4AECF851F99B6B3E43 /* Pods-PondasiContracts-PondasiContractsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUP9G5V5V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leowirasanto.PondasiContractsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PondasiContracts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60B427952F7EBE6600836247 /* Build configuration list for PBXProject "PondasiContracts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B427BB2F7EBE6800836247 /* Debug */,
+				60B427BC2F7EBE6800836247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B427BD2F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContracts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B427BE2F7EBE6800836247 /* Debug */,
+				60B427BF2F7EBE6800836247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B427C02F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContractsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B427C12F7EBE6800836247 /* Debug */,
+				60B427C22F7EBE6800836247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B427C32F7EBE6800836247 /* Build configuration list for PBXNativeTarget "PondasiContractsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B427C42F7EBE6800836247 /* Debug */,
+				60B427C52F7EBE6800836247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60B427922F7EBE6600836247 /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - PondasiContracts (1.0.0)
+
+DEPENDENCIES:
+  - PondasiContracts (from `../../Core/PondasiContracts`)
+
+EXTERNAL SOURCES:
+  PondasiContracts:
+    :path: "../../Core/PondasiContracts"
+
+SPEC CHECKSUMS:
+  PondasiContracts: e1ba3cb7fda32c79ad6842241f8502138a390a0a
+
+PODFILE CHECKSUM: 9ae9b170fc3bfa667ece5a9efe7ad6cefb2da769
+
+COCOAPODS: 1.16.2
