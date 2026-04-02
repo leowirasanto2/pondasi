@@ -43,16 +43,22 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		60B426BA2F7EB77300836247 /* PondasiApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiApp;
 			sourceTree = "<group>";
 		};
 		60B426CA2F7EB77600836247 /* PondasiAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiAppTests;
 			sourceTree = "<group>";
 		};
 		60B426D42F7EB77600836247 /* PondasiAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PondasiAppUITests;
 			sourceTree = "<group>";
 		};
@@ -272,13 +278,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PondasiApp/Pods-PondasiApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PondasiApp/Pods-PondasiApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

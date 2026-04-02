@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PondasiContracts
 
 struct LandingView: View {
     @StateObject private var vm = LandingViewModel()
@@ -89,7 +90,7 @@ struct LandingView: View {
     
     // MARK: - Activity Cards
     @ViewBuilder
-    private func activityCard(for activity: ActivityType) -> some View {
+    private func activityCard(for activity: LandingActivityType) -> some View {
         switch activity {
         case .journal(let journal):
             journalCard(journal)
@@ -281,13 +282,13 @@ struct CircularProgressView: View {
 // MARK: - Recent Activities View
 struct RecentActivitiesView: View {
     @Environment(\.dismiss) private var dismiss
-    let activities: [ActivityType]
+    let activities: [LandingActivityType]
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 16) {
-                    ForEach(Array(activities.enumerated()), id: \.offset) { index, activity in
+                    ForEach(Array(activities.enumerated()), id: \.element.id) { index, activity in
                         activityCard(for: activity)
                             .padding(.horizontal)
                     }
@@ -314,7 +315,7 @@ struct RecentActivitiesView: View {
     
     // MARK: - Activity Cards
     @ViewBuilder
-    private func activityCard(for activity: ActivityType) -> some View {
+    private func activityCard(for activity: LandingActivityType) -> some View {
         switch activity {
         case .journal(let journal):
             journalCard(journal)
@@ -432,17 +433,22 @@ struct RecentActivitiesView: View {
                 
                 Spacer()
                 
-                CircularProgressView(
-                    progress: Double(workout.repetitionsDone) / Double(workout.repetitionsGoal),
-                    color: .orange
-                )
-                .frame(width: 60, height: 60)
+                woProgressView(workout)
             }
         }
         .padding()
         .background(Color(.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .shadow(color: .black.opacity(0.05), radius: 8, y: 2)
+    }
+    
+    private func woProgressView(_ workout: WorkoutActivity) -> some View {
+        let goal = workout.repetitionsGoal < 0 ? 1 : workout.repetitionsGoal
+        return CircularProgressView(
+            progress: Double(workout.repetitionsDone) / Double(goal),
+            color: .orange
+        )
+        .frame(width: 60, height: 60)
     }
 }
 

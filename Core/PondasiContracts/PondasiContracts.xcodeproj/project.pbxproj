@@ -47,22 +47,16 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		60B4279C2F7EBE6600836247 /* PondasiContracts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = PondasiContracts;
 			sourceTree = "<group>";
 		};
 		60B427AC2F7EBE6800836247 /* PondasiContractsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = PondasiContractsTests;
 			sourceTree = "<group>";
 		};
 		60B427B62F7EBE6800836247 /* PondasiContractsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = PondasiContractsUITests;
 			sourceTree = "<group>";
 		};
@@ -138,7 +132,6 @@
 				2493C4457FFE049A26E84F60 /* Pods-PondasiContractsTests.debug.xcconfig */,
 				2F28DCF84AF2E34FF3E7A8D7 /* Pods-PondasiContractsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

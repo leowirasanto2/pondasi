@@ -6,53 +6,17 @@
 //
 
 import Foundation
-internal import Combine
-
-// MARK: - Activity Models
-enum ActivityType {
-    case journal(JournalActivity)
-    case creativity(CreativityActivity)
-    case workout(WorkoutActivity)
-}
-
-struct JournalActivity {
-    let date: Date
-    let type: JournalType
-    let summary: String
-    
-    enum JournalType {
-        case text
-        case voice
-    }
-}
-
-struct CreativityActivity {
-    let projectName: String
-    let description: String
-    let dateModified: Date
-}
-
-struct WorkoutActivity {
-    let date: Date
-    let workoutType: String // e.g., "Chest Day", "Leg Day", "Back Day"
-    let repetitionsDone: Int
-    let repetitionsGoal: Int
-}
-
-struct MiniApp: Identifiable {
-    let id = UUID()
-    let name: String
-    let icon: String
-    let color: Color
-}
+import Combine
+import PondasiContracts
 
 import SwiftUI
 
+// TODO: all dummy data are acceptable for this phase, let's not care about that now.
 @MainActor
 class LandingViewModel: ObservableObject {
     @Published var userName: String = "Leo"
-    @Published var latestActivity: ActivityType?
-    @Published var recentActivities: [ActivityType] = []
+    @Published var latestActivity: LandingActivityType?
+    @Published var recentActivities: [LandingActivityType] = []
     @Published var miniApps: [MiniApp] = []
     
     init() {
@@ -103,10 +67,7 @@ class LandingViewModel: ObservableObject {
         miniApps = [
             MiniApp(name: "Journal", icon: "book.fill", color: .blue),
             MiniApp(name: "Creativity", icon: "paintbrush.fill", color: .purple),
-            MiniApp(name: "Workout", icon: "figure.run", color: .orange),
-            MiniApp(name: "Meditation", icon: "heart.fill", color: .pink),
-            MiniApp(name: "Learning", icon: "graduationcap.fill", color: .green),
-            MiniApp(name: "Goals", icon: "target", color: .red)
+            MiniApp(name: "Workout", icon: "figure.run", color: .orange)
         ]
     }
 }
