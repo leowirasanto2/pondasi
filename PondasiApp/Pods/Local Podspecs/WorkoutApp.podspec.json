@@ -1,0 +1,23 @@
+{
+  "name": "WorkoutApp",
+  "version": "1.0.0",
+  "summary": "Workout personal trainer.",
+  "homepage": "https://github.com/leowirasanto2/pondasi",
+  "license": {
+    "type": "Proprietary"
+  },
+  "authors": {
+    "Leo Wirasanto": "leo@pondasi.local"
+  },
+  "source": {
+    "git": "git@github.com:leowirasanto2/pondasi.git",
+    "tag": "workout-v1.0.0"
+  },
+  "source_files": "Sources/**/*",
+  "dependencies": {
+    "PondasiContracts": []
+  },
+  "platforms": {
+    "ios": "17.0"
+  }
+}

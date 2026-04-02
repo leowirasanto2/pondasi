@@ -1,0 +1,7 @@
+platform :ios, '17.0'
+use_frameworks!
+
+target 'WorkoutApp' do
+  # Link to the shared core from the perspective of this folder
+  pod 'PondasiContracts', :path => '../../Core/PondasiContracts'
+end

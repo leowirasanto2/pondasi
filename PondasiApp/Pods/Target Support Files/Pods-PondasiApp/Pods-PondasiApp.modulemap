@@ -1,0 +1,6 @@
+framework module Pods_PondasiApp {
+  umbrella header "Pods-PondasiApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

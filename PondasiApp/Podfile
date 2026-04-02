@@ -1,0 +1,14 @@
+platform :ios, '17.0'
+use_frameworks!
+
+# Use path-based development pods for the monorepo
+target 'PondasiApp' do
+  pod 'PondasiContracts', :path => '../Core/PondasiContracts'
+  pod 'CreativityApp',    :path => '../Apps/CreativityApp'
+  pod 'WorkoutApp',       :path => '../Apps/WorkoutApp'
+  pod 'JournalApp',       :path => '../Apps/JournalApp'
+
+  target 'PondasiAppTests' do
+    inherit! :search_paths
+  end
+end

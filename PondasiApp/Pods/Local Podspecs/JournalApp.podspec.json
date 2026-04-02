@@ -1,0 +1,23 @@
+{
+  "name": "JournalApp",
+  "version": "1.0.0",
+  "summary": "Journaling workflow.",
+  "homepage": "https://github.com/leowirasanto2/pondasi",
+  "license": {
+    "type": "Proprietary"
+  },
+  "authors": {
+    "Leo Wirasanto": "leo@pondasi.local"
+  },
+  "source": {
+    "git": "git@github.com:leowirasanto2/pondasi.git",
+    "tag": "journal-v1.0.0"
+  },
+  "source_files": "Sources/**/*",
+  "dependencies": {
+    "PondasiContracts": []
+  },
+  "platforms": {
+    "ios": "17.0"
+  }
+}
