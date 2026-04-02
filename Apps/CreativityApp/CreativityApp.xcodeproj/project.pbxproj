@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3306F99929D220CD296960F4 /* Pods_CreativityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693AF04451DC999D13339A95 /* Pods_CreativityApp.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		60B4270B2F7EBBA500836247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,24 +28,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AAB95F6CE817F8C2DDF7645 /* Pods-CreativityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreativityApp.release.xcconfig"; path = "Target Support Files/Pods-CreativityApp/Pods-CreativityApp.release.xcconfig"; sourceTree = "<group>"; };
+		3D659980A06C0EC8CB243B5B /* Pods-CreativityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreativityApp.debug.xcconfig"; path = "Target Support Files/Pods-CreativityApp/Pods-CreativityApp.debug.xcconfig"; sourceTree = "<group>"; };
 		60B426FB2F7EBBA300836247 /* CreativityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B4270A2F7EBBA500836247 /* CreativityAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreativityAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B427142F7EBBA500836247 /* CreativityAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreativityAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		693AF04451DC999D13339A95 /* Pods_CreativityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreativityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		60B426FD2F7EBBA300836247 /* CreativityApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = CreativityApp;
 			sourceTree = "<group>";
 		};
 		60B4270D2F7EBBA500836247 /* CreativityAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = CreativityAppTests;
 			sourceTree = "<group>";
 		};
 		60B427172F7EBBA500836247 /* CreativityAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = CreativityAppUITests;
 			sourceTree = "<group>";
 		};
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3306F99929D220CD296960F4 /* Pods_CreativityApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +93,8 @@
 				60B4270D2F7EBBA500836247 /* CreativityAppTests */,
 				60B427172F7EBBA500836247 /* CreativityAppUITests */,
 				60B426FC2F7EBBA300836247 /* Products */,
+				AEBBB2CD81E9CE9FC6C21D6E /* Pods */,
+				F61860F5A501287D110EE3C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +108,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AEBBB2CD81E9CE9FC6C21D6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D659980A06C0EC8CB243B5B /* Pods-CreativityApp.debug.xcconfig */,
+				1AAB95F6CE817F8C2DDF7645 /* Pods-CreativityApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F61860F5A501287D110EE3C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				693AF04451DC999D13339A95 /* Pods_CreativityApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B4271E2F7EBBA500836247 /* Build configuration list for PBXNativeTarget "CreativityApp" */;
 			buildPhases = (
+				2E97B1A38DCA5D96761D46B3 /* [CP] Check Pods Manifest.lock */,
 				60B426F72F7EBBA300836247 /* Sources */,
 				60B426F82F7EBBA300836247 /* Frameworks */,
 				60B426F92F7EBBA300836247 /* Resources */,
+				51FDA324263CB60B547BE2C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +147,6 @@
 				60B426FD2F7EBBA300836247 /* CreativityApp */,
 			);
 			name = CreativityApp;
-			packageProductDependencies = (
-			);
 			productName = CreativityApp;
 			productReference = 60B426FB2F7EBBA300836247 /* CreativityApp.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +168,6 @@
 				60B4270D2F7EBBA500836247 /* CreativityAppTests */,
 			);
 			name = CreativityAppTests;
-			packageProductDependencies = (
-			);
 			productName = CreativityAppTests;
 			productReference = 60B4270A2F7EBBA500836247 /* CreativityAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +189,6 @@
 				60B427172F7EBBA500836247 /* CreativityAppUITests */,
 			);
 			name = CreativityAppUITests;
-			packageProductDependencies = (
-			);
 			productName = CreativityAppUITests;
 			productReference = 60B427142F7EBBA500836247 /* CreativityAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +260,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E97B1A38DCA5D96761D46B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CreativityApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51FDA324263CB60B547BE2C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreativityApp/Pods-CreativityApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreativityApp/Pods-CreativityApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CreativityApp/Pods-CreativityApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60B426F72F7EBBA300836247 /* Sources */ = {
@@ -392,6 +464,7 @@
 		};
 		60B4271F2F7EBBA500836247 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D659980A06C0EC8CB243B5B /* Pods-CreativityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -424,6 +497,7 @@
 		};
 		60B427202F7EBBA500836247 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAB95F6CE817F8C2DDF7645 /* Pods-CreativityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
