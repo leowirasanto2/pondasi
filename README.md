@@ -2,7 +2,7 @@
 
 A local-first iOS "Personal OS" — a private space where filmmaking, physical training, and personal reflection converge. Multiple focused mini-apps ("verticals") run under one shell, each usable standalone or embedded in the super app.
 
-https://github.com/leowirasanto2/pondasi/assets/demo.mov
+https://github.com/leowirasanto2/pondasi/raw/initial-setup/assets/demo.mov
 
 ## Verticals
 
