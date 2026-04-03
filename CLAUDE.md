@@ -34,29 +34,11 @@ Verticals must NOT import each other. All shared types flow through `PondasiCont
 - **Minimum OS**: iOS 17.0
 - **Xcode**: 26.x (uses `FileSystemSynchronizedRootGroup`)
 
-## CocoaPods Workflow
+## CocoaPods Notes
 
-Each module has its own `Podfile`. Always run `pod install` from the relevant module directory:
-
-```bash
-# Super app (installs all verticals)
-cd PondasiApp && pod install
-
-# Individual vertical (for standalone development)
-cd Apps/JournalApp && pod install
-cd Apps/CreativityApp && pod install
-cd Apps/WorkoutApp && pod install
-
-# Contracts (rarely needed — no external deps)
-cd Core/PondasiContracts && pod install
-```
-
-Always open the `.xcworkspace`, never the `.xcodeproj` directly.
-
-Integration pattern: each vertical publishes a `.podspec`; PondasiApp's `Podfile` references them via local paths:
-```ruby
-pod 'CreativityApp', :path => '../Apps/CreativityApp'
-```
+- Each module has its own `Podfile`. Run `pod install` from the relevant module directory.
+- Always open `.xcworkspace`, never `.xcodeproj`.
+- Each vertical publishes a `.podspec`; PondasiApp references them via `pod 'X', :path => '../Apps/X'`.
 
 ## Conventions
 
@@ -80,6 +62,20 @@ pod 'CreativityApp', :path => '../Apps/CreativityApp'
 - Backend sync or cloud storage
 - Push notifications
 - `Manifest.yml` — placeholder file, ignore for now
+
+## Collaboration Rules
+
+These rules govern how Claude assists in this project to conserve tokens and keep the human in control.
+
+1. **Never run `pod install` or any `git` commands** (pull, push, fetch, rebase, etc.). State the exact command and wait for the user to confirm it completed before proceeding.
+
+2. **Never read files speculatively.** Ask the user which files are relevant. Only read after explicit permission or direction.
+
+3. **Never read a whole file when a snippet suffices.** If only a specific type/function is needed, ask the user to paste just that part.
+
+4. **Always confirm before acting on assumptions.** List what context is missing and wait for the user's go-ahead before proceeding.
+
+5. **Start a new conversation per task.** Do not carry unrelated context across tasks — remind the user to use `/clear` when switching topics mid-session.
 
 ## Current State
 
