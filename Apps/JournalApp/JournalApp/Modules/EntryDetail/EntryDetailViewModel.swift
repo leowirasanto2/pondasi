@@ -1,11 +1,17 @@
 import Foundation
 import SwiftData
 import UIKit
+import Combine
 
 @MainActor
 final class EntryDetailViewModel: ObservableObject {
     @Published var pendingCommentRange: NSRange?
     @Published var commentInput = ""
+    @Published var selectedCommentID: UUID?
+
+    func selectComment(_ id: UUID) {
+        selectedCommentID = selectedCommentID == id ? nil : id
+    }
 
     func requestComment(for range: NSRange) {
         pendingCommentRange = range

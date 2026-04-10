@@ -14,3 +14,8 @@ struct VoiceRecorderView: View {
         .accessibilityIdentifier("btn_voice_record")
     }
 }
+
+#Preview {
+    VoiceRecorderView()
+        .padding()
+}

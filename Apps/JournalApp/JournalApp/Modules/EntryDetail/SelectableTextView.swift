@@ -6,6 +6,7 @@ import UIKit
 struct SelectableTextView: UIViewRepresentable {
     let text: String
     let comments: [EntryComment]
+    var selectedCommentID: UUID?
     var onCommentRequested: (NSRange) -> Void
 
     func makeUIView(context: Context) -> CommentableTextView {
@@ -34,7 +35,7 @@ struct SelectableTextView: UIViewRepresentable {
     }
 
     func sizeThatFits(_ proposal: ProposedViewSize, uiView: CommentableTextView, context: Context) -> CGSize? {
-        let width = proposal.width ?? UIScreen.main.bounds.width
+        let width = proposal.width ?? uiView.window?.bounds.width ?? 375
         return uiView.sizeThatFits(CGSize(width: width, height: .greatestFiniteMagnitude))
     }
 
@@ -56,9 +57,10 @@ struct SelectableTextView: UIViewRepresentable {
             guard length > 0,
                   comment.highlightStart >= 0,
                   comment.highlightStart + length <= nsLength else { continue }
+            let isSelected = comment.id == selectedCommentID
             attributed.addAttribute(
                 .backgroundColor,
-                value: UIColor.systemYellow.withAlphaComponent(0.4),
+                value: UIColor.systemYellow.withAlphaComponent(isSelected ? 0.75 : 0.2),
                 range: NSRange(location: comment.highlightStart, length: length)
             )
         }
