@@ -11,9 +11,7 @@ import SwiftData
 @main
 struct JournalAppApp: App {
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
+        let schema = Schema(JournalAppSchema.models)
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
@@ -25,7 +23,7 @@ struct JournalAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            JournalAppEntry()
         }
         .modelContainer(sharedModelContainer)
     }
