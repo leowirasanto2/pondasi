@@ -23,6 +23,7 @@ struct EntryDetailView: View {
                     commentsSection
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 20)
             .padding(.vertical, 24)
         }
