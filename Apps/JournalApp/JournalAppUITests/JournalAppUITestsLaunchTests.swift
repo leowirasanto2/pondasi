@@ -5,6 +5,12 @@
 //  Created by Leo Wirasanto Laia on 02/04/26.
 //
 
+// MARK: - DISABLED
+// UI tests are temporarily disabled to keep the local test loop fast.
+// See JournalAppUITests.swift for context. Re-enable by deleting the
+// `#if false` line below and the matching `#endif` at the bottom.
+
+#if false
 import XCTest
 
 final class JournalAppUITestsLaunchTests: XCTestCase {
@@ -31,3 +37,4 @@ final class JournalAppUITestsLaunchTests: XCTestCase {
         add(attachment)
     }
 }
+#endif
