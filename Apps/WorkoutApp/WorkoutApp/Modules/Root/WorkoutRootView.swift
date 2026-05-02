@@ -28,6 +28,14 @@ struct WorkoutRootView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var navigationPath: [WorkoutDestination] = []
 
+    /// Optional deep-link target. When set, the root pushes the matching
+    /// session's active-workout view once on appear.
+    let deepLinkSessionID: UUID?
+
+    init(deepLinkSessionID: UUID? = nil) {
+        self.deepLinkSessionID = deepLinkSessionID
+    }
+
     var body: some View {
         NavigationStack(path: $navigationPath) {
             SessionListView(navigationPath: $navigationPath, modelContext: modelContext)
@@ -43,6 +51,16 @@ struct WorkoutRootView: View {
                         ExerciseHistoryView(exerciseName: name, modelContext: modelContext)
                     case .arComingSoon:
                         ARComingSoonView()
+                    }
+                }
+                .task(id: deepLinkSessionID) {
+                    guard let id = deepLinkSessionID else { return }
+                    var descriptor = FetchDescriptor<WorkoutSession>(
+                        predicate: #Predicate { $0.id == id }
+                    )
+                    descriptor.fetchLimit = 1
+                    if let session = (try? modelContext.fetch(descriptor))?.first {
+                        navigationPath.append(.activeWorkout(session))
                     }
                 }
         }

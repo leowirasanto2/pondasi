@@ -77,6 +77,37 @@ These rules govern how Claude assists in this project to conserve tokens and kee
 
 5. **Start a new conversation per task.** Do not carry unrelated context across tasks — remind the user to use `/clear` when switching topics mid-session.
 
+## PR Drafting
+
+When asked to draft a PR description, use this format. Do not invent extra sections.
+
+```
+## Summary
+<what changed and why, in prose. List new/modified/deleted files at the end.>
+
+## Test Plan
+<action-level checklist. Do NOT enumerate step-by-step UI taps.
+Use coarse "Validate X" items, e.g. "Validate build successfully from Xcode",
+"Validate Cmd+U passes", "Validate tapping each tile presents the mini-app
+without crashing". One checkbox per validation, not per tap.>
+
+## Demo
+<screen recording / screenshots, or "(Attach screen recording or screenshots.)" placeholder>
+```
+
+Tone notes:
+
+- Summary is prose with bullets where helpful, not a wall of headings.
+- Test Plan items describe *what to validate*, not *how to click through it*. Trust the reviewer to run the app.
+- Skip "Known limitations" / "Non-goals" / "How to test" subsections unless the user asks.
+- Skip the commit/branch commands at the bottom unless the user asks.
+
 ## Current State
 
-All mini-apps are Xcode boilerplate (generated templates). Only `Profile` and `ProfilePicture` models exist in PondasiContracts. Active development starts from scratch on top of this scaffolding.
+- **PondasiContracts**: `Profile`, `ProfilePicture`, `MiniApp` (with `MiniAppID`-based id), `MiniAppID`, `ActivityFeedItem`, and the `MiniAppActivityProvider` protocol.
+- **JournalApp**: real domain — `JournalEntry` + `EntryComment` SwiftData models, full text/voice composition flow, list, detail, comments. Exposes `JournalAppEntry(deepLinkEntryID:)`, `JournalAppSchema.models`, and `JournalActivityProvider`.
+- **WorkoutApp**: real domain — `WorkoutSession`, `ExerciseEntry`, `SetRecord`, `Exercise`, `MuscleGroup`. Active workout flow, exercise library, history. Exposes `WorkoutAppEntry(deepLinkSessionID:)`, `WorkoutAppSchema.models`, and `WorkoutActivityProvider`.
+- **CreativityApp**: still scaffolding. Wired in PondasiApp's tile grid via a `CreativityComingSoonView` placeholder.
+- **PondasiApp**: shared `ModelContainer` aggregates `JournalAppSchema.models + WorkoutAppSchema.models`. `LandingView` is the root, presents mini-apps via `.sheet(item:)` with `.presentationDetents([.large])`. `LandingViewModel` aggregates feed items from registered providers, sorts by timestamp.
+- **Tests**: `EntryDetailViewModelTests` (Swift Testing) covers the journal entry detail VM. JournalApp UI tests are disabled (scheme `skipped="YES"` + `#if false`); snapshot tests planned for a follow-up branch.
+- **Dead code to clean up later**: `PondasiApp/PondasiApp/ContentView.swift` and `PondasiApp/PondasiApp/Item.swift` (Xcode template leftovers, not referenced).

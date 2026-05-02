@@ -7,13 +7,21 @@
 
 import SwiftUI
 import SwiftData
+import JournalApp
+import WorkoutApp
 
 @main
 struct PondasiAppApp: App {
+    /// Shared ModelContainer that aggregates the @Model types contributed by
+    /// each mini-app. Each vertical exposes its own schema via
+    /// `<MiniApp>Schema.models`, and we merge them here so SwiftData has a
+    /// single source of truth across the super app.
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
+        let allModels: [any PersistentModel.Type] =
+            JournalAppSchema.models +
+            WorkoutAppSchema.models
+
+        let schema = Schema(allModels)
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
@@ -25,7 +33,7 @@ struct PondasiAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
         .modelContainer(sharedModelContainer)
     }

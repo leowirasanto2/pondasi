@@ -2,72 +2,49 @@
 //  LandingViewModel.swift
 //  PondasiApp
 //
-//  Created by Leo Wirasanto Laia on 03/04/26.
+//  Aggregates ActivityFeedItems from each registered MiniAppActivityProvider
+//  and exposes the merged + sorted list to LandingView.
 //
 
 import Foundation
 import Combine
-import PondasiContracts
-
 import SwiftUI
+import SwiftData
+import PondasiContracts
+import JournalApp
+import WorkoutApp
 
-// TODO: all dummy data are acceptable for this phase, let's not care about that now.
 @MainActor
-class LandingViewModel: ObservableObject {
+final class LandingViewModel: ObservableObject {
     @Published var userName: String = "Leo"
-    @Published var latestActivity: LandingActivityType?
-    @Published var recentActivities: [LandingActivityType] = []
-    @Published var miniApps: [MiniApp] = []
-    
-    init() {
-        loadMockData()
-    }
-    
-    private func loadMockData() {
-        // Mock recent activities
-        recentActivities = [
-            .journal(JournalActivity(
-                date: Date(),
-                type: .text,
-                summary: "Reflected on today's progress and set goals for tomorrow"
-            )),
-            .workout(WorkoutActivity(
-                date: Date().addingTimeInterval(-86400),
-                workoutType: "Chest Day",
-                repetitionsDone: 45,
-                repetitionsGoal: 50
-            )),
-            .creativity(CreativityActivity(
-                projectName: "Digital Illustration",
-                description: "Working on a new character design for my portfolio",
-                dateModified: Date().addingTimeInterval(-172800)
-            )),
-            .journal(JournalActivity(
-                date: Date().addingTimeInterval(-259200),
-                type: .voice,
-                summary: "Voice note about morning meditation and gratitude practice"
-            )),
-            .workout(WorkoutActivity(
-                date: Date().addingTimeInterval(-345600),
-                workoutType: "Leg Day",
-                repetitionsDone: 60,
-                repetitionsGoal: 60
-            )),
-            .creativity(CreativityActivity(
-                projectName: "UI Design System",
-                description: "Creating a cohesive design system for personal projects",
-                dateModified: Date().addingTimeInterval(-432000)
-            ))
-        ]
-        
-        // Set latest activity
-        latestActivity = recentActivities.first
-        
-        // Mock mini apps
-        miniApps = [
-            MiniApp(name: "Journal", icon: "book.fill", color: .blue),
-            MiniApp(name: "Creativity", icon: "paintbrush.fill", color: .purple),
-            MiniApp(name: "Workout", icon: "figure.run", color: .orange)
-        ]
+    @Published var feed: [ActivityFeedItem] = []
+    @Published var miniApps: [MiniApp] = [
+        MiniApp(id: .journal,    name: "Journal",    icon: "book.fill",       color: .blue),
+        MiniApp(id: .creativity, name: "Creativity", icon: "paintbrush.fill", color: .purple),
+        MiniApp(id: .workout,    name: "Workout",    icon: "figure.run",      color: .orange)
+    ]
+
+    /// Per-provider fetch limit before merging. The shell trims the merged
+    /// list when displaying. 20 per vertical is plenty for a feed.
+    private let perProviderLimit = 20
+
+    private let providers: [MiniAppActivityProvider] = [
+        JournalActivityProvider(),
+        WorkoutActivityProvider()
+        // CreativityActivityProvider() — wire up when CreativityApp ships
+    ]
+
+    /// The single most recent activity across all mini-apps, used for the
+    /// "Latest Activity" card on the landing screen. Returns nil when the
+    /// feed is empty (e.g. fresh install).
+    var latestActivity: ActivityFeedItem? { feed.first }
+
+    /// Refresh from the shared ModelContext. Call from LandingView's `.task`
+    /// or `.onAppear` so we pick up changes when returning from a mini-app.
+    func refresh(context: ModelContext) {
+        let merged = providers.flatMap { provider in
+            provider.recentActivities(in: context, limit: perProviderLimit)
+        }
+        feed = merged.sorted { $0.timestamp > $1.timestamp }
     }
 }

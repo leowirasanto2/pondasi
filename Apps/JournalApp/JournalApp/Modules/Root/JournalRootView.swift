@@ -8,6 +8,15 @@ enum JournalDestination: Hashable {
 struct JournalRootView: View {
     @State private var path = NavigationPath()
     @State private var showingCompose = false
+    @Environment(\.modelContext) private var modelContext
+
+    /// Optional deep-link target. When set, the root pushes the matching
+    /// entry's detail view once on appear.
+    let deepLinkEntryID: UUID?
+
+    init(deepLinkEntryID: UUID? = nil) {
+        self.deepLinkEntryID = deepLinkEntryID
+    }
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -29,6 +38,16 @@ struct JournalRootView: View {
                     switch destination {
                     case .entryDetail(let entry):
                         EntryDetailView(entry: entry)
+                    }
+                }
+                .task(id: deepLinkEntryID) {
+                    guard let id = deepLinkEntryID else { return }
+                    var descriptor = FetchDescriptor<JournalEntry>(
+                        predicate: #Predicate { $0.id == id }
+                    )
+                    descriptor.fetchLimit = 1
+                    if let entry = (try? modelContext.fetch(descriptor))?.first {
+                        path.append(JournalDestination.entryDetail(entry))
                     }
                 }
         }
