@@ -1,5 +1,5 @@
 platform :ios, '17.0'
-use_frameworks!
+use_frameworks! :linkage => :static
 
 target 'JournalApp' do
   # Link to the shared core from the perspective of this folder
@@ -10,6 +10,7 @@ post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
       config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+      config.build_settings['GENERATE_INFOPLIST_FILE'] = 'YES'
     end
   end
 end
